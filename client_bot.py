@@ -9,7 +9,7 @@ load_dotenv()
 
 DISCORD_TOKEN = os.getenv("TOKEN")
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.all())
 
 @client.event
 async def on_ready():
